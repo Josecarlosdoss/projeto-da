@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo</title>
+    <title>Fundo fixo</title>
     <style>
         html, body {
             margin: 0;
@@ -12,21 +12,44 @@
             height: 100vh;
         }
         body {
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: repeat-y; 
-            background-attachment: scroll;
-            background-position: right bottom;
-            background-size: cover;
             
-            /* background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center; */
+            /* background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;*/
+            
+             background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center; 
+              background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             padding: 10px;
+        }
+        #container{
+            
+            
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+            
+        }
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(-50%, -50%)
+        
         }
     </style>
 </head>
@@ -38,6 +61,12 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam atque facilis illum illo voluptates, laboriosam dignissimos vero error debitis, neque suscipit delectus et eligendi dolorum aut expedita consequatur. Et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat earum culpa ad. Eaque sed sunt adipisci nam eos dolore nulla rerum. Sapiente alias at magni debitis, voluptatibus tempora impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum! Quidem, voluptate necessitatibus iusto doloribus sint corporis dolores quod consequatur? Ipsum accusamus enim ipsam, molestias placeat voluptatibus debitis velit expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit autem quo dolores, exercitationem facilis veritatis officia nisi alias eaque non dignissimos qui totam quod at repudiandae tempore temporibus rem.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam atque facilis illum illo voluptates, laboriosam dignissimos vero error debitis, neque suscipit delectus et eligendi dolorum aut expedita consequatur. Et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat earum culpa ad. Eaque sed sunt adipisci nam eos dolore nulla rerum. Sapiente alias at magni debitis, voluptatibus tempora impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum! Quidem, voluptate necessitatibus iusto doloribus sint corporis dolores quod consequatur? Ipsum accusamus enim ipsam, molestias placeat voluptatibus debitis velit expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit autem quo dolores, exercitationem facilis veritatis officia nisi alias eaque non dignissimos qui totam quod at repudiandae tempore temporibus rem.</p>
     </main>
+    <session id="container">
+            
+            <article id="conteudo">
+            
+            </article>
+    </session>
 
 </body>
 </html>

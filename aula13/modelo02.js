@@ -8,7 +8,7 @@ function verificar() {
             window.alert('[ERRO] Verificar os dados e tente novamente')
         
         } else {
-                var fsex = document.getElementsById('radsex')
+                var fsex = document.getElementsByName('radsex')
                 var idade = ano - Number(fano.value)
                 
                 var genero = ' '

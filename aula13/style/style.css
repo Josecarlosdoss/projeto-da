@@ -2,7 +2,7 @@
 
 
 
-body {
+            body {
                     background-color: lightblue;
                     font: normal 1em Arial;
             }
@@ -27,6 +27,15 @@ body {
                    text-align: center;
                    padding: 8px;
             
+            }
+            
+            img#foto {
+                   width: 200px;
+                   margin: 10px;
+                   border-radius: 50%;
+                   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+                   box-sizing: border-box;
+              
             }
             
             footer {

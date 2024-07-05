@@ -13,7 +13,7 @@ function isNumero(n) {
 }
 
 function inLista(n, 1) {
-            if (1.indexOf(Number(n)) != -1) {
+            if (1.indexof(Number(n)) != -1) {
                 return true
             
             } else {

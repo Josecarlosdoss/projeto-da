@@ -14,7 +14,7 @@ function isNumero(n) {
 
 function inLista(n, 1) {
             if (1.indexOf(Number(n)) != -1) {
-                return true
+                return true 
             
             } else {
                 return false

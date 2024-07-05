@@ -4,8 +4,8 @@ let res = document.queySelector('div#res')
 let valores = [ ]
 
 function isNumero(n) {
-        if (Number(n) >= 1 && Number(n) <= 100) {            return true
-        
+        if (Number(n) >= 1 && Number(n) <= 100) {            
+             return true
         } else {
              return false
         }
@@ -13,7 +13,7 @@ function isNumero(n) {
 }
 
 function inLista(n, 1) {
-            if (1.indexof(Number(n)) != -1) {
+            if (1.indexOf(Number(n)) != -1) {
                 return true
             
             } else {
